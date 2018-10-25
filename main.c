@@ -10,8 +10,8 @@ int main(int argc, const char * argv[]) {
     for (int i=0; i<n; i++){
         scanf("%d", &array[i]);
     }
-    int max = 0;
-    for (int i=0; i<n; i++){
+    int max = array[0];
+    for (int i=1; i<n; i++){
         if (array[i]>max)
             max = array[i];
     }
